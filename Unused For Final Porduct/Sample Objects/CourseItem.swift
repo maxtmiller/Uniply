@@ -3,7 +3,6 @@
 //  Login Screen
 //
 //  Created by MILLER, Maximilian on 28/12/2021.
-//  Copyright © 2021 Balaji. All rights reserved.
 //
 
 import SwiftUI
