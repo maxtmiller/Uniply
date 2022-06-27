@@ -12,6 +12,7 @@ struct ComputerScienceCourseRequirements: View {
         ScrollView {
             VStack(spacing: 20) {
                 CompSCR1()
+                CompSCR2()
             }
             .padding(.bottom, 60)
         }
