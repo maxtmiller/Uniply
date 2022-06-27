@@ -17,7 +17,7 @@ struct GenInfoCV: View {
             .padding(.bottom, 60)
         }
         .overlay(
-            NavigationBarSub(title: "Curicculum V", Account_View: .constant(false))
+            NavigationBarSub(title: "CV", Account_View: .constant(false))
         )
         .navigationBarHidden(true)
     }
