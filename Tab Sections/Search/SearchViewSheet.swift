@@ -7,201 +7,6 @@
 
 import SwiftUI
 
-/*struct SearchSheetView: View {
-    
-    @State var searchText = ""
-    @State var searching = false
-    @AppStorage("isLiteMode") private var isLiteMode = false
-    
-    let Sections = [
-        "General Information", "Courses", "Application", "University Search"
-    ]
-    
-    var body: some View {
-        ZStack {
-            Image("Image1")
-                .resizable()
-                .frame(maxWidth: 400, minHeight: 920)
-            
-            VStack(alignment: .leading) {
-                SearchBar1(searchText: $searchText, searching: $searching)
-                    .padding(.top, 100)
-                Spacer()
-                    
-                    .listStyle(GroupedListStyle())
-                        .navigationTitle(searching ? "Searching" : "Search")
-                        .toolbar {
-                            if searching {
-                                Button("Cancel") {
-                                    searchText = ""
-                                    withAnimation {
-                                       searching = false
-                                       UIApplication.shared.dismissKeyboard()
-                                    }
-                                }
-                            }
-                        }
-                        .gesture(DragGesture()
-                                    .onChanged({ _ in
-                            UIApplication.shared.dismissKeyboard()
-                                    })
-                        )
-            }
-        }
-    }
-    
-    var cover: some View {
-        VStack {
-            Spacer()
-                .navigationBarHidden(true)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 500)
-        .padding(20)
-        .foregroundColor(.black )
-        .background(
-            Image("Image1")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: 400, minHeight: 920, alignment: .top)
-                //.frame(maxHeight: .infinity)
-        )
-        .mask (
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-        )
-        .overlay (
-            VStack(alignment: .leading, spacing: 12) {
-                Text("Heeleeo")
-                    .font(.largeTitle.weight(.bold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Heeleeo")
-                    .font(.footnote.weight(.semibold))
-                Text("Heeleeo")
-                    .font(.footnote)
-                Divider()
-            }
-                .padding(20)
-                .background(
-                    Rectangle()
-                        .fill(.ultraThinMaterial)
-                        .mask(RoundedRectangle(cornerRadius: 30,  style: .continuous))
-                        
-            
-                .offset(y: 250)
-                .padding(20)
-                )
-        )
-    }
-}
-
-/*struct SearchSheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchSheetView()
-    }
-}*/
-
-struct SearchBar1: View {
-    
-    @Binding var searchText: String
-    @Binding var searching: Bool
-    @AppStorage("isLiteMode") private var isLiteMode = false
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color(.systemGray6/*"LightGray"*/))
-                .frame(width: 330, height: 20, alignment: .center)
-                .cornerRadius(13)
-                .padding(10)
-                .opacity(0)
-            HStack {
-                Image(systemName: "magnifyingglass")
-                TextField("Search", text: $searchText){ startedEditing in
-                    if startedEditing {
-                        withAnimation {
-                            searching = true
-                        }
-                    }
-                } onCommit: {
-                    withAnimation {
-                        searching = false
-                    }
-                }
-                .toolbar {
-                    if searching {
-                        Button("Cancel") {
-                            searchText = ""
-                            withAnimation {
-                               searching = false
-                               UIApplication.shared.dismissKeyboard()
-                            }
-                        }
-                    }
-                }
-                .gesture(DragGesture()
-                            .onChanged({ _ in
-                    UIApplication.shared.dismissKeyboard()
-                            })
-                )
-                
-            }
-            .padding(.leading, 10)
-        }
-        .frame(width: 350, height: 40, alignment: .center)
-        
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 13, style: .continuous))
-        .padding(.leading, 0)
-        .if(!isLiteMode, transform: { view in
-            view.shadow(color: Color("DarkGray").opacity(0.5), radius: 30, x: 0, y: 0)
-        })
-    }
-}
-
-
-extension UIApplication {
-     func dismissKeyboard1() {
-         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-     }
- }
-
-struct FirstResponderTextField1: UIViewRepresentable {
-    
-    @Binding var text: String
-    let placeholder: String
-    
-    class Coordinator: NSObject, UITextFieldDelegate {
-        
-        @Binding var text: String
-        var becameFirstResponder1 = false
-        
-        init(text: Binding<String>) {
-            self._text = text
-        }
-        
-        func textFieldDidChangeSelection(_ textField: UITextField) {
-            text = textField.text ?? ""
-        }
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        return Coordinator(text: $text)
-    }
-    
-    func makeUIView(context: Context) -> some UIView {
-        let textField = UITextField()
-        textField.delegate = context.coordinator
-        textField.placeholder = placeholder
-        return textField
-    }
-    
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        if !context.coordinator.becameFirstResponder1 {
-            uiView.becomeFirstResponder()
-            context.coordinator.becameFirstResponder1 = true
-        }
-    }
-}*/
-
 struct SearchViewSheet: View {
     
     @State var searchText = ""
@@ -326,10 +131,10 @@ struct SearchViewSheet: View {
                                     .font(.system(size: 20))
                             }
                             .padding(.trailing, 20)
-                            Text("Application")
+                            Text("Application Form")
                                 .font(.system(size: 20)).bold()
                                 .padding(.leading, 0)
-                            Text("lllllllllllllllllllllllllllll")
+                            Text("llllllllllllllll")
                                 .opacity(0)
                         }
                     }
@@ -425,10 +230,10 @@ struct SearchViewSheet: View {
                                     .font(.system(size: 20))
                             }
                             .padding(.trailing, 20)
-                            Text("Application")
+                            Text("Application Form")
                                 .font(.system(size: 20)).bold()
                                 .padding(.leading, 0)
-                            Text("lllllllllllllllllllllllllllll")
+                            Text("llllllllllllllll")
                                 .opacity(0)
                         }
                     }
