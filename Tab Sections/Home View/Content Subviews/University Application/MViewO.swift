@@ -19,7 +19,7 @@ struct MViewO: View {
             Spacer()
             VStack(alignment: .leading, spacing: 12) {
                 Text(course.title)
-                    .font(.system(size: 30).weight(.bold))
+                    .font(.system(size: 24).weight(.bold))
                     .if(!isLiteMode, transform: { view in
                         view.matchedGeometryEffect(id: "title", in: namespace)
                     })
