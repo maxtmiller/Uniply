@@ -12,6 +12,7 @@ struct LawCourseRequirements: View {
         ScrollView {
             VStack(spacing: 20) {
                 LawCR1()
+                LawCR2()
             }
             .padding(.bottom, 60)
         }
