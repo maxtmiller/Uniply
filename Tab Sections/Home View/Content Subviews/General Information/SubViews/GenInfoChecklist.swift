@@ -32,7 +32,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Identifying Universities")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn about how to indentify the right university for you.")
+                            Text("Learn about how to find the right university for you.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -50,7 +50,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Academic Transcripts")
                                 .font(.title3.weight(.semibold))
-                            Text("This section will discuss how grades are important for university.")
+                            Text("Learn about academic transcripts and their importance.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -66,9 +66,9 @@ struct GenInfoChecklist: View {
                             .padding(.top, 15)
                             .padding(.trailing, 12)
                         VStack(alignment: .leading, spacing: 4){
-                            Text("Extra-Curricular")
+                            Text("Extra-Curriculars")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn about how to build a strong profle with activities out of school.")
+                            Text("Learn about how to build a strong profle with extracurriculars.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -86,7 +86,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Recommendation Letter")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn how to leave a good impression for recommedations")
+                            Text("Learn how to find the right person to write a recommendation letter.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -104,7 +104,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Standardized Tests")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn how to practice for these tests and why they are important.")
+                            Text("Learn how to prepare for these tests and their differences.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -122,7 +122,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Awards & Experiences")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn about the importance of taking part in competitions.")
+                            Text("Learn about the importance of awards and other experiences.")
                                 .font(.system(size: 15))
                         }
                     }
@@ -140,7 +140,7 @@ struct GenInfoChecklist: View {
                         VStack(alignment: .leading, spacing: 4){
                             Text("Community Service")
                                 .font(.title3.weight(.semibold))
-                            Text("Learn about the importance of helping others in your application.")
+                            Text("Learn about the importance of service and helping others.")
                                 .font(.system(size: 15))
                         }
                     }
