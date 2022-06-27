@@ -12,6 +12,7 @@ struct MedicineCourseRequirements: View {
         ScrollView {
             VStack(spacing: 20) {
                 MedCR1()
+                MedCR2()
             }
             .padding(.bottom, 60)
         }
