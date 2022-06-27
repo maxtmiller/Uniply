@@ -12,6 +12,7 @@ struct BusinessCourseRequirements: View {
         ScrollView {
             VStack(spacing: 20) {
                 BusCR1()
+                BusCR2()
             }
             .padding(.bottom, 60)
         }
