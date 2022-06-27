@@ -133,10 +133,10 @@ struct SearchView: View {
                                     .font(.system(size: 20))
                             }
                             .padding(.trailing, 20)
-                            Text("Application")
+                            Text("Application Form")
                                 .font(.system(size: 20)).bold()
                                 .padding(.leading, 0)
-                            Text("lllllllllllllllllllllllllllll")
+                            Text("llllllllllllllll")
                                 .opacity(0)
                         }
                     }
@@ -232,10 +232,10 @@ struct SearchView: View {
                                     .font(.system(size: 20))
                             }
                             .padding(.trailing, 20)
-                            Text("Application")
+                            Text("Application Form")
                                 .font(.system(size: 20)).bold()
                                 .padding(.leading, 0)
-                            Text("lllllllllllllllllllllllllllll")
+                            Text("llllllllllllllll")
                                 .opacity(0)
                         }
                     }
