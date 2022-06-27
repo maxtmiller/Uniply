@@ -48,8 +48,7 @@ struct MedicineDetailView: View {
                           .padding(8)
                           .background(.ultraThinMaterial, in: Circle())
                     }
-                    .padding(.top, -50)
-                        .padding(10)
+                    //.padding(.top, -50)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
                     .padding(20)
                     .ignoresSafeArea()
@@ -57,7 +56,7 @@ struct MedicineDetailView: View {
                     overlay
                         .padding(.bottom, -180)
                 Rectangle()
-                    .frame(width: 380, height: 100, alignment: .center)
+                    .frame(width: 380, height: 150, alignment: .center)
                     .opacity(0)
                     //.padding(.horizontal, -20)
             }
@@ -81,6 +80,7 @@ struct MedicineDetailView: View {
             .navigationBarHidden(true)
             .statusBar(hidden: true)
         }
+        .frame(width: 400, height: 860)
     }
     
     var cover: some View {
