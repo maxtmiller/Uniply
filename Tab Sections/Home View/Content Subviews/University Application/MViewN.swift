@@ -58,7 +58,7 @@ struct MViewN: View {
                 .overlay (
                     VStack(alignment: .leading, spacing: 12) {
                         Text(course.title)
-                            .font(.system(size: 30).weight(.bold))
+                            .font(.system(size: 24).weight(.bold))
                             .if(!isLiteMode, transform: { view in
                                 view.matchedGeometryEffect(id: "title", in: namespace)
                             })
@@ -70,17 +70,13 @@ struct MViewN: View {
                                 view.matchedGeometryEffect(id: "subtitle", in: namespace)
                             })
                             .foregroundColor(Color("Mono"))
-                        Text(course.text)
+                                Text(course.text)
                             .font(.footnote)
                             .if(!isLiteMode, transform: { view in
                                 view.matchedGeometryEffect(id: "content", in: namespace)
                             })
                             .foregroundColor(Color("Mono"))
-                        Divider()
-                        HStack {
-                            Text("University Application Form: https://www.commonapp.org/")
-                                .foregroundColor(Color("Mono"))
-                        }
+                        
                     }
                     .padding(20)
                     .background(
@@ -94,6 +90,34 @@ struct MViewN: View {
                     .offset(y: 250)
                     .padding(20)
                 )
+                ZStack {
+                    Text("In Development...")
+                        .font(.system(size: 20).weight(.semibold))
+                        .multilineTextAlignment(.center)
+                        .frame(alignment: .center)
+                        .padding(.horizontal, 100)
+                        .padding(.top, 10)
+                        .padding(.bottom, 80)
+                        .background(
+                            Rectangle()
+                                .fill(.ultraThinMaterial)
+                                .mask(RoundedRectangle(cornerRadius: 30,  style: .continuous))
+                        )
+                    VStack {
+                        Text("Refer to this link for applying:")
+                            .foregroundColor(Color("Mono"))
+                        Link(destination: URL(string: "https://www.commonapp.org/")!) {
+                            Text("https://www.commonapp.org/")
+                                .foregroundColor(Color("Mono"))
+                        }
+                    }.offset(y: 15)
+                }
+                .offset(y: 75)
+                
+                Rectangle()
+                    .frame(width: 400, height: 50, alignment: .center)
+                    .opacity(0)
+                
             }
             if show == true {
                 Button {
@@ -141,3 +165,17 @@ struct MViewN_Previews: PreviewProvider {
         MViewN(namespace: namespace, show: .constant(false))
     }
 }
+
+/*
+Divider()
+Text("In Progress")
+    .font(.system(size: 20).weight(.semibold))
+    .multilineTextAlignment(.center)
+    .frame(alignment: .center)
+    .padding(.leading, 100)
+    .padding(.top, 10)
+Text("University Application Form:")
+    .foregroundColor(Color("Mono"))
+Text("https://www.commonapp.org/")
+    .foregroundColor(Color("Mono"))
+*/
