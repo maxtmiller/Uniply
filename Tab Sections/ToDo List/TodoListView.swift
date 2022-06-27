@@ -22,18 +22,28 @@ struct TodoListView: View {
                         .padding(.top, 150)
                 } else {
                     List {
-                        ForEach(listViewModel.items) { item in
-                            ListRowView(item: item)
-                                .onTapGesture {
-                                    withAnimation(.linear) {
-                                        listViewModel.updateItem(item: item)
+                        Section {
+                            ForEach(listViewModel.items) { item in
+                                ListRowView(item: item)
+                                    .onTapGesture {
+                                        withAnimation(.linear) {
+                                            listViewModel.updateItem(item: item)
+                                        }
                                     }
-                                }
+                            }
+                            .onDelete(perform: listViewModel.deleteItem)
+                            .onMove(perform: listViewModel.moveItem)
                         }
-                        .onDelete(perform: listViewModel.deleteItem)
-                        .onMove(perform: listViewModel.moveItem)
+                        
+                        Section {
+                            
+                        }
                     }
                     .listStyle(PlainListStyle())
+                    
+                    Rectangle()
+                        .frame(width: 400, height: 50, alignment: .center)
+                        .opacity(0)
                 }
             }
             .navigationTitle("Todo List")
