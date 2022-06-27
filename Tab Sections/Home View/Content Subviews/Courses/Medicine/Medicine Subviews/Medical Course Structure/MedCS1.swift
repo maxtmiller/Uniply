@@ -17,13 +17,13 @@ struct MedCS1: View {
         
         ZStack {
             Rectangle()
-                .frame(width: 370, height: 720, alignment: .center)
+                .frame(width: 370, height: 730, alignment: .center)
                 .cornerRadius(10)
                 .foregroundColor(.white)
             Text("""
                  Applicants are initially admitted to the pre-clinical stage of the course.
 
-                 The first five terms of this course are devoted to the First BM. This addresses not only much of the science that underpins Medicine, but also the clinical problems that arise when systems fail. Students are introduced to the major systems of the body and study all aspects of their structure and function in health and also the principles of disease processes. Students are encouraged to develop an enquiring approach and to consider the experimental basis of the science in the course. Matters of clinical relevance are illustrated from the outset with students making regular visits to GP tutors.
+                 The first five terms of this course are devoted to the First BM (Bachelor of Medicine). This addresses not only much of the science that underpins Medicine, but also the clinical problems that arise when systems fail. Students are introduced to the major systems of the body and study all aspects of their structure and function in health and also the principles of disease processes. Students are encouraged to develop an enquiring approach and to consider the experimental basis of the science in the course. Matters of clinical relevance are illustrated from the outset with students making regular visits to GP tutors.
 
                  The First BM is followed by a four-term BA Honours course (the Final Honour School) in Medical Sciences. Students specialise in two areas of biomedical science selected from a range of options. They will become adept at working from primary research literature, and will be encouraged to think both critically and creatively. Students will gain in-depth knowledge of their chosen options, as well as advanced technical skills at the laboratory bench and in scientific data handling and presentation.
 
@@ -31,7 +31,7 @@ struct MedCS1: View {
                 """)
                 .multilineTextAlignment(.leading)
                 .padding(.horizontal, 29)
-                .frame(width: 380, height: 720, alignment: .leading)
+                .frame(width: 380, height: 730, alignment: .leading)
                 .font(.system(size: 16))
         }
         
