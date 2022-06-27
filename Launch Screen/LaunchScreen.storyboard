@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lq9-QN-Nc5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="BHp-Rd-kSb">
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo4" translatesAutoresizingMaskIntoConstraints="NO" id="BHp-Rd-kSb">
                                         <rect key="frame" x="162" y="364" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="cix-ux-WJ1"/>
@@ -50,7 +50,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="1024" height="1024"/>
+        <image name="Logo4" width="120" height="120"/>
         <namedColor name="LaunchBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
