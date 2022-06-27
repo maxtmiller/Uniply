@@ -22,10 +22,11 @@ struct LaunchView: View {
             Color.black
                 .ignoresSafeArea()
             
-            Image("Icon")
+            Image("AppLogo")
                 .resizable()
                 //.frame(width: 150, height: 110)
                 .frame(width: 90, height: 90)
+                .cornerRadius(20)
                 //.clipShape(Circle())
             
             ZStack {
