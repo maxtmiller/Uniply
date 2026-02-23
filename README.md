@@ -7,7 +7,7 @@
 
 ---
 
-## Demo
+## Preview
 
 <img width="1397" height="893" alt="uniply_cover" src="https://github.com/user-attachments/assets/3539a5ed-982f-43d6-959f-76aaceb08996" />
 
