@@ -1,20 +1,53 @@
-# Uniply
 
-This project involved creating an iOS app using Xcode to help students navigate the university application process. The app is designed to identify courses based on individual interests and provide resources to develop academic skills. By combining functionality with an appealing user interface, the app aims to guide students in preparing for university, including study tips, application steps, and requirements for various universities.  
+# [`Uniply`](#)
 
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat\&logo=swift\&logoColor=white) ![iOS](https://img.shields.io/badge/iOS-000000?style=flat\&logo=apple\&logoColor=white) ![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=flat\&logo=xcode\&logoColor=white)
+
+**iOS app guiding students through university applications with personalized course recommendations and study resources.**
+
+---
+
+## Demo
+
+<img width="1397" height="893" alt="uniply_cover" src="https://github.com/user-attachments/assets/3539a5ed-982f-43d6-959f-76aaceb08996" />
+
+---
 
 ## Features
-* Guides university preparation with study tips and application steps
-* Provides personalized recommendations for study duration and grade requirements
-* Offers comprehensive resources on university applications
-* Features a user-friendly, professional interface with intuitive navigation
 
+* Guides university preparation with study tips and application steps
+* Personalized recommendations for study duration and grade targets
+* Comprehensive resources on university applications
+* Clean, user-friendly interface with intuitive navigation
+
+---
 
 ## Technical Overview
-- **Development Tools**: Built with **Swift** in **Xcode**, combining technical flexibility with robust UI capabilities.  
-- **Programming Goals**:  
-  - Self-taught **Swift** to explore iOS development
-  - Gained proficiency in the **software design cycle**, applying professional methodologies.  
 
-## Motivation
-The motivation behind creating this app stemmed from a combination of personal reflections and a desire to make a meaningful impact on students navigating the university application process. As a student myself, I recognized the challenges of understanding application requirements, preparing adequately, and organizing study efforts to meet competitive academic standards. These insights drove me to create a resourceful, user-friendly app that could guide others in their journey.
+* **Frontend / App:** Swift, Xcode
+* **Logic:** Personalized recommendation engine for courses and study planning
+* **Data Handling:** Local storage for tracking student progress
+* **UI/UX:** Professional design with smooth navigation and visual clarity
+
+---
+
+## Local Setup
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd Uniply
+```
+
+2. Open in **Xcode**
+3. Build and run the project on an iOS simulator or device
+
+---
+
+## Next Steps
+
+* Expand university database including international options
+* Add interactive checklists and deadline reminders
+* Integrate analytics for progress tracking and study suggestions
+* Explore iPad-compatible version for larger screen usability
